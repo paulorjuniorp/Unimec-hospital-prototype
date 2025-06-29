@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Botão de acessibilidade -->
+  <button id="acessibilidade-btn" aria-label="Menu de acessibilidade">♿</button>
+  <div id="menu-acessibilidade" class="oculto" role="navigation" aria-label="Menu de acessibilidade">
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="resetarAcessibilidade()">Resetar</button>
+  </div>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <!-- Cabeçalho com logo e menu -->
+  <header role="banner">
+    <img src="./logo.png" alt="Logo do Hospital, com uma cruz vermelha estilizada no centro" width="200">
+    <nav role="navigation" aria-label="Menu Principal">
+      <ul>
+        <li><a href="index.html" role="link" aria-label="Página Inicial">Início</a></li>
+        <li><a href="#" role="link" aria-label="Sobre Nós">Sobre</a></li>
+        <li><a href="#" role="link" aria-label="Serviços">Serviços</a></li>
+        <li><a href="#" role="link" aria-label="Especialidades">Especialidades</a></li>
+        <li><a href="contato.html" role="link" aria-label="Contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main id="conteudo-principal">
+    <div class="contato-container">
+      <h1>Fale Conosco</h1>
+      <p>Preencha o formulário ou entre em contato pelas redes sociais:</p>
+
+      <form class="formulario-contato">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="botoes-redes">
+        <a href="https://www.instagram.com/seu_usuario" target="_blank" class="btn instagram" title="Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/seu_usuario" target="_blank" class="btn facebook" title="Facebook">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hospital Unimec. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+  <!-- Leitor de texto -->
+  <script>
+    document.addEventListener('mouseup', () => {
+      const textoSelecionado = window.getSelection().toString().trim();
+      if (textoSelecionado.length > 0) {
+        const fala = new SpeechSynthesisUtterance(textoSelecionado);
+        fala.lang = 'pt-BR';
+        speechSynthesis.speak(fala);
+      }
+    });
+  </script>
+
+  <!-- Atalhos de teclado -->
+  <script>
+    document.addEventListener("keydown", function(e) {
+      if (e.altKey && e.key === "1") {
+        document.querySelector(".formulario-contato input")?.focus();
+      }
+      if (e.altKey && e.key === "2") {
+        document.querySelector(".botoes-redes a")?.focus();
+      }
+    });
+  </script>
+</body>
+</html>

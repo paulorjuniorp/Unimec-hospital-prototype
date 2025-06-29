@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Hospital Unimec</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <button id="acessibilidade-btn">♿</button>
+
+    <div id="menu-acessibilidade" class="oculto">
+      <button onclick="aumentarFonte()">Aumentar Fonte</button>
+      <button onclick="modoAltoContraste()">Alto Contraste</button>
+      <button onclick="resetarAcessibilidade()">Resetar</button>
+    </div>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <header role="banner">
+    <!-- Descrição detalhada da imagem -->
+    <img src="./logo.png" alt="Logo do Hospital, com uma cruz vermelha estilizada no centro" width="200">
+    <nav role="navigation" aria-label="Menu Principal">
+      <ul>
+        <li><a href="#" role="link" aria-label="Página Inicial">Início</a></li>
+        <li><a href="#" role="link" aria-label="Sobre Nós">Sobre</a></li>
+        <li><a href="#" role="link" aria-label="Serviços">Serviços</a></li>
+        <li><a href="#" role="link" aria-label="Especialidades">Especialidades</a></li>
+        <li><a href="contato.html" role="link" aria-label="Contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+   <footer>
+    <p>&copy; 2025 Hospital Unimec. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+  <!-- Leitor de texto -->
+  <script>
+    document.addEventListener('mouseup', () => {
+      const textoSelecionado = window.getSelection().toString().trim();
+      if (textoSelecionado.length > 0) {
+        const fala = new SpeechSynthesisUtterance(textoSelecionado);
+        fala.lang = 'pt-BR';
+        speechSynthesis.speak(fala);
+      }
+    });
+  </script>
+
+  <!-- Atalhos de teclado -->
+  <script>
+    document.addEventListener("keydown", function(e) {
+      if (e.altKey && e.key === "1") {
+        document.querySelector(".formulario-contato input")?.focus();
+      }
+      if (e.altKey && e.key === "2") {
+        document.querySelector(".botoes-redes a")?.focus();
+      }
+    });
+  </script>
+
+
+
+</body>
