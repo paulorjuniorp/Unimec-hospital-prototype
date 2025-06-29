@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Sobre - Hospital UNIMEC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header role="banner">
+    <img src="./logo.png" alt="Logo do Hospital UNIMEC com uma cruz azul" width="200" />
+    <nav role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html" aria-label="Página Inicial">Início</a></li>
+        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="especialidades.html">Especialidades</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section aria-labelledby="titulo-sobre" class="secao-sobre">
+      <h1 id="titulo-sobre">Quem Somos</h1>
+      <p>O Hospital UNIMEC (Unidade Médico Cirúrgica Ltda.) é um hospital com foco em assistência humanizada, fundado em 1976 por 17 médicos. Ao longo dos anos, passou por diversas mudanças e modernizações para atender com excelência à população de Vitória da Conquista e região.</p>
+    </section>
+
+    <section aria-labelledby="titulo-historia" class="secao-historia">
+      <h2 id="titulo-historia">Nossa História</h2>
+      <p>Inicialmente funcionando na Aliança Palace Hotel, o hospital foi transferido para a Rua Góes Calmon. Desde então, tem se expandido com novos leitos, ambulatórios e unidades especializadas. Em 2016, passou por uma modernização da estrutura física e digital, mantendo seu compromisso com a qualidade e a humanização no atendimento.</p>
+      <img src="./img/antiga-fachada.avif" alt="Fachada antiga do Hospital UNIMEC em 1976" />
+    </section>
+
+    <section aria-labelledby="titulo-missao" class="secao-missao">
+      <h2 id="titulo-missao">Nossa Missão</h2>
+      <p>Promover a saúde de forma sustentável e humanizada, com excelência nos serviços por meio da tecnologia, ensino e pesquisa, garantindo a satisfação de colaboradores e clientes.</p>
+    </section>
+
+    <section aria-labelledby="titulo-visao" class="secao-visao">
+      <h2 id="titulo-visao">Nossa Visão</h2>
+      <p>Ser reconhecido como referência em assistência humanizada.</p>
+    </section>
+
+    <section aria-labelledby="titulo-valores" class="secao-valores">
+      <h2 id="titulo-valores">Nossos Valores</h2>
+      <ul>
+        <li>Humanização</li>
+        <li>Ética</li>
+        <li>Transparência</li>
+        <li>Responsabilidade socioambiental</li>
+        <li>Foco em resultados</li>
+        <li>Valorização contínua</li>
+        <li>Melhoria contínua</li>
+        <li>Valorização dos colaboradores</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Hospital UNIMEC. Todos os direitos reservados.</p>
+    <address>Rua Góes Calmon, 335 – Centro, Vitória da Conquista - BA</address>
+  </footer>
+
+  <!-- Acessibilidade -->
+  <button id="acessibilidade-btn" aria-label="Abrir menu de acessibilidade">♿</button>
+  <div id="menu-acessibilidade" class="oculto">
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="resetarAcessibilidade()">Resetar</button>
+  </div>
+
+  <!-- Libras -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <!-- Leitor de texto -->
+  <script>
+    document.addEventListener('mouseup', () => {
+      const textoSelecionado = window.getSelection().toString().trim();
+      if (textoSelecionado.length > 0) {
+        const fala = new SpeechSynthesisUtterance(textoSelecionado);
+        fala.lang = 'pt-BR';
+        speechSynthesis.speak(fala);
+      }
+    });
+  </script>
+
+</body>
+</html>
