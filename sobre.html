@@ -2,93 +2,92 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sobre - Hospital UNIMEC</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sobre.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header role="banner">
-    <img src="./logo.png" alt="Logo do Hospital UNIMEC com uma cruz azul" width="200" />
-    <nav role="navigation" aria-label="Menu principal">
-      <ul>
-        <li><a href="index.html" aria-label="Página Inicial">Início</a></li>
-        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="especialidades.html">Especialidades</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <img src="./logo.png" alt="Logo do Hospital UNIMEC" width="150">
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="especialidades.html">Especialidades</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main role="main">
-    <section aria-labelledby="titulo-sobre" class="secao-sobre">
-      <h1 id="titulo-sobre">Quem Somos</h1>
-      <p>O Hospital UNIMEC (Unidade Médico Cirúrgica Ltda.) é um hospital com foco em assistência humanizada, fundado em 1976 por 17 médicos. Ao longo dos anos, passou por diversas mudanças e modernizações para atender com excelência à população de Vitória da Conquista e região.</p>
-    </section>
+<main class="sobre-modern">
+  <section class="sobre-modern">
+  <div class="hero-sobre">
+    <div class="hero-content">
+      <h3>BEM-VINDO AO HOSPITAL UNIMEC</h3>
+      <h1>Cuidado Humano com Excelência</h1>
 
-    <section aria-labelledby="titulo-historia" class="secao-historia">
-      <h2 id="titulo-historia">Nossa História</h2>
-      <p>Inicialmente funcionando na Aliança Palace Hotel, o hospital foi transferido para a Rua Góes Calmon. Desde então, tem se expandido com novos leitos, ambulatórios e unidades especializadas. Em 2016, passou por uma modernização da estrutura física e digital, mantendo seu compromisso com a qualidade e a humanização no atendimento.</p>
-      <img src="./img/antiga-fachada.avif" alt="Fachada antiga do Hospital UNIMEC em 1976" />
-    </section>
+      <div class="features">
+        <ul>
+          <li>Atendimento Humanizado</li>
+          <li>Equipe Especializada</li>
+          <li>Tecnologia Avançada</li>
+          <li>Conforto e Segurança</li>
+          <li>Compromisso com a Saúde</li>
+          <li>Tradição e Inovação</li>
+        </ul>
+      </div>
 
-    <section aria-labelledby="titulo-missao" class="secao-missao">
-      <h2 id="titulo-missao">Nossa Missão</h2>
-      <p>Promover a saúde de forma sustentável e humanizada, com excelência nos serviços por meio da tecnologia, ensino e pesquisa, garantindo a satisfação de colaboradores e clientes.</p>
-    </section>
+      <p>O Hospital UNIMEC é referência em saúde humanizada, atuando desde 1976 com foco na excelência, inovação e respeito à vida. Estamos em constante evolução para atender melhor você.</p>
+    </div>
 
-    <section aria-labelledby="titulo-visao" class="secao-visao">
-      <h2 id="titulo-visao">Nossa Visão</h2>
-      <p>Ser reconhecido como referência em assistência humanizada.</p>
-    </section>
-
-    <section aria-labelledby="titulo-valores" class="secao-valores">
-      <h2 id="titulo-valores">Nossos Valores</h2>
-      <ul>
-        <li>Humanização</li>
-        <li>Ética</li>
-        <li>Transparência</li>
-        <li>Responsabilidade socioambiental</li>
-        <li>Foco em resultados</li>
-        <li>Valorização contínua</li>
-        <li>Melhoria contínua</li>
-        <li>Valorização dos colaboradores</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer role="contentinfo">
-    <p>&copy; 2025 Hospital UNIMEC. Todos os direitos reservados.</p>
-    <address>Rua Góes Calmon, 335 – Centro, Vitória da Conquista - BA</address>
-  </footer>
-
-  <!-- Acessibilidade -->
-  <button id="acessibilidade-btn" aria-label="Abrir menu de acessibilidade">♿</button>
-  <div id="menu-acessibilidade" class="oculto">
-    <button onclick="aumentarFonte()">Aumentar Fonte</button>
-    <button onclick="modoAltoContraste()">Alto Contraste</button>
-    <button onclick="resetarAcessibilidade()">Resetar</button>
+    <div class="hero-image">
+      <img src="./img/antiga-fachada-2.avif" alt="Fachada hospital unimec em 1976">
+    </div>
   </div>
 
-  <!-- Libras -->
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+  <div class="info-boxes">
+    <h3>Quem Somos</h3>
+    
+      <p>O Hospital UNIMEC (Unidade Médico Cirúrgica Ltda.) é referência em saúde humanizada em Vitória da Conquista e região. Fundado em 1976 por 17 sócios médicos, iniciou suas atividades no antigo Aliança Palace Hotel, sendo posteriormente transferido para a Rua Góes Calmon, onde permanece até hoje.
 
-  <!-- Leitor de texto -->
-  <script>
-    document.addEventListener('mouseup', () => {
-      const textoSelecionado = window.getSelection().toString().trim();
-      if (textoSelecionado.length > 0) {
-        const fala = new SpeechSynthesisUtterance(textoSelecionado);
-        fala.lang = 'pt-BR';
-        speechSynthesis.speak(fala);
-      }
-    });
-  </script>
+Ao longo dos anos, o hospital vem se modernizando e ampliando sua estrutura física e serviços, como a inauguração de novos leitos, ambulatórios especializados e melhorias constantes nas instalações. Atualmente, conta com mais de 30 sócios, atende a pacientes do SUS, de convênios e particulares em mais de 30 municípios.
+
+Somos uma instituição privada que alia tradição e inovação com foco na excelência, ética e no compromisso com a vida. Nosso modelo de gestão é estruturado por uma diretoria executiva eleita anualmente em assembleia geral.
+
+Nossa missão é promover a saúde de forma sustentável e humanizada, buscando a excelência por meio da tecnologia, do ensino e da pesquisa, garantindo satisfação e confiança a clientes e colaboradores.
+
+Nossa visão é ser reconhecido como referência nacional em assistência humanizada, oferecendo cuidado com qualidade, respeito e responsabilidade.</p>
+    <div class="box-container">
+      <div class="box">
+        <h4>Missão</h4>
+        <p>Promover a saúde de forma sustentável e humanizada, buscando excelência por meio da tecnologia, ensino e pesquisa.</p>
+      </div>
+      <div class="box">
+        <h4>Visão</h4>
+        <p>Ser reconhecido como referência em assistência humanizada no Brasil.</p>
+      </div>
+      <div class="box">
+        <h4>Valores</h4>
+        <ul>
+          <li>Ética e Transparência</li>
+          <li>Responsabilidade social</li>
+          <li>Valorização das pessoas</li>
+          <li>Inovação com propósito</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Hospital UNIMEC. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
