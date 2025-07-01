@@ -1,78 +1,169 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <title>Hospital Unimec</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <button id="acessibilidade-btn">♿</button>
 
-    <div id="menu-acessibilidade" class="oculto">
-      <button onclick="aumentarFonte()">Aumentar Fonte</button>
-      <button onclick="modoAltoContraste()">Alto Contraste</button>
-      <button onclick="resetarAcessibilidade()">Resetar</button>
+<body>
+  <header>
+    <div class="logo"><img src="images/logo.png" style="width: 100px;" alt="Logo hospital UNIMEC"></div>
+    <nav class="navbar">
+      <a href="#">Início</a>
+      <a href="#">Pages</a>
+      <a href="#">Doutores</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <div class="menu-icons">
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <div id="searchbox" class="fas fa-search"></div>
     </div>
 
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+  </header>
+
+  <div class="home">
+    <div class="home-back">
+    </div>
+    <div class="main-home">
+      <div class="main-inner-home">
+        <h2>Cuidado integral - Da prevenção ao tratamento</h2>
+        <h1>Hospital UNIMEC</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="main-inner-home">
+        <div class="right-content-img">
+          <img src="images/medico-bebe.jpg" alt="Médico obstreta segurando recém-nascido">
+        </div>
+      </div>
     </div>
   </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-  <header role="banner">
-    <!-- Descrição detalhada da imagem -->
-    <img src="./logo.png" alt="Logo do Hospital, com uma cruz vermelha estilizada no centro" width="200">
-    <nav role="navigation" aria-label="Menu Principal">
-      <ul>
-        <li><a href="#" role="link" aria-label="Página Inicial">Início</a></li>
-        <li><a href="sobre.html" role="link" aria-label="Sobre Nós">Sobre</a></li>
-        <li><a href="#" role="link" aria-label="Serviços">Serviços</a></li>
-        <li><a href="#" role="link" aria-label="Especialidades">Especialidades</a></li>
-        <li><a href="contato.html" role="link" aria-label="Contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-   <footer>
-    <p>&copy; 2025 Hospital Unimec. Todos os direitos reservados.</p>
+
+  <div class="services">
+    <div class="service-heading">
+      <h1>Nossos <span>Serviços</span></h1>
+    </div>
+    <div class="main-services">
+      <div class="main-inner-services">
+        <div class="services-img">
+          <img src="images/servico1.jpg"
+            alt="Serviços ofertados ambulatório, pronto-atendimento, exames, internações clínicas e cirurgias">
+        </div>
+        <div class="services-content">
+          <h2>Serviços ofertados</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="main-inner-services">
+        <div class="services-img">
+          <img src="images/servico2.jpg" alt="Serviços ofertados de ambulatório">
+        </div>
+        <div class="services-content">
+          <h2>Serviços de ambulatório</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="main-inner-services">
+        <div class="services-img">
+          <img src="images/servico3.jpg" alt="Serviços ofertados de pronto-atendimento">
+        </div>
+        <div class="services-content">
+          <h2>Serviços de pronto-atendimento</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="main-inner-services">
+        <div class="services-img">
+          <img src="images/servico4.jpg" alt="Serviços ofertados de exames">
+        </div>
+        <div class="services-content">
+          <h2>Serviços de exames</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="main-inner-services">
+        <div class="services-img">
+          <img src="images/servico5.jpg" alt="Serviços ofertados de internações clínicas e círurgicas">
+        </div>
+        <div class="services-content">
+          <h2>Serviços de internações clínicas e círurgicas</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="main-inner-services">
+        <div class="services-img">
+          <img src="images/servico5.jpg" alt="Serviços ofertados de internações clínicas e círurgicas">
+        </div>
+        <div class="services-content">
+          <h2>Serviços de internações clínicas e círurgicas</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="appointment">
+    <div class="heading-appointment">
+      <h1>Marque sua <span>Consulta</span></h1>
+    </div>
+    <div class="main-appointment">
+      <div class="main-inner-appointment">
+        <img src="images/consulta.png" alt="Marcação de consulta">
+      </div>
+      <div class="main-inner-appointment">
+        <div class="right-appointment-content">
+          <h2>Clique e agende sua <span>consulta</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#">Marque sua consulta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>UNIMEC</h3>
+        <p><i class="fa-solid fa-envelope"></i> unimec_recgerencia@outlook.com</p>
+        <p><i class="fa-solid fa-phone"></i> 77 2101-4600</p>
+        <p><i class="fa-solid fa-location-dot"></i> Rua Góes Calmon,335 - Centro -Vitória da Conquista-BA</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/hospitalunimec/" target="_blank">
+              Instagram</a>
+          </li>
+          <li><i class="fa-brands fa-whatsapp"></i><a
+              href="https://api.whatsapp.com/message/PJLHIE777AQME1?autoload=1&app_absent=0" target="_blank">
+              Whatsapp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      Copyright @ 2025. IFBA | Otimização de Software para Web
+    </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="script.js"></script>
-
-  <!-- Leitor de texto -->
-  <script>
-    document.addEventListener('mouseup', () => {
-      const textoSelecionado = window.getSelection().toString().trim();
-      if (textoSelecionado.length > 0) {
-        const fala = new SpeechSynthesisUtterance(textoSelecionado);
-        fala.lang = 'pt-BR';
-        speechSynthesis.speak(fala);
-      }
-    });
-  </script>
-
-  <!-- Atalhos de teclado -->
-  <script>
-    document.addEventListener("keydown", function(e) {
-      if (e.altKey && e.key === "1") {
-        document.querySelector(".formulario-contato input")?.focus();
-      }
-      if (e.altKey && e.key === "2") {
-        document.querySelector(".botoes-redes a")?.focus();
-      }
-    });
-  </script>
-
-
-
 </body>
+
+</html>
