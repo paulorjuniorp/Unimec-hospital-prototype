@@ -127,7 +127,3 @@ O site é totalmente responsivo e se adapta a:
 ## 📄 Licença
 
 Este projeto foi desenvolvido para a disciplina de Otimização de Software para Web do curso de Pós Graduação em Desenvolvimento Web do IFBA.
-
----
-
-**Desenvolvido com ❤️ para o Hospital UNIMEC**
