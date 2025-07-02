@@ -57,6 +57,8 @@ Este projeto representa o site institucional do Hospital UNIMEC, localizado em V
    - Ginecologia e Obstetrícia
    - Oftalmologia
    - Pneumologia
+   - Gastroenterologia
+   - Nefrologia
 
 5. **Contato (contato.html)**
    - Formulário de contato
@@ -109,6 +111,35 @@ O site é totalmente responsivo e se adapta a:
 - **Tablet**: Telas médias (768px - 1199px)
 - **Mobile**: Telas pequenas (até 767px)
 
+## 🔧 Como Executar
+
+1. **Clone o repositório**:
+   ```bash
+   git clone [url-do-repositorio]
+   ```
+
+2. **Navegue até a pasta**:
+   ```bash
+   cd Unimec-hospital-prototype-DEV-2-new-home-page
+   ```
+
+3. **Execute um servidor local**:
+   ```bash
+   # Com Python
+   python -m http.server 8000
+   
+   # Com Node.js
+   npx serve .
+   
+   # Com PHP
+   php -S localhost:8000
+   ```
+
+4. **Acesse no navegador**:
+   ```
+   http://localhost:8000
+   ```
+
 ## 📋 Checklist de Acessibilidade
 
 - [x] Estrutura semântica HTML5
@@ -122,6 +153,29 @@ O site é totalmente responsivo e se adapta a:
 - [x] VLibras integrado
 - [x] Leitor de tela compatível
 
+## 🤝 Contribuição
+
+Para contribuir com o projeto:
+
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature
+3. Commit suas mudanças
+4. Push para a branch
+5. Abra um Pull Request
+
+## 📞 Contato
+
+**Hospital UNIMEC**
+- **Telefone**: 77 2101-4600
+- **E-mail**: unimec_recgerencia@outlook.com
+- **Endereço**: Rua Góes Calmon, 335 - Centro - Vitória da Conquista - BA
+- **Instagram**: [@hospitalunimec](https://www.instagram.com/hospitalunimec/)
+- **WhatsApp**: [Link direto](https://api.whatsapp.com/message/PJLHIE777AQME1?autoload=1&app_absent=0)
+
 ## 📄 Licença
 
-Este projeto foi desenvolvido como parte da avaliação da disciplina de Otimização de Software para Web do curso de Pós Graduação em Desenvolvimento Web do IFBA.
+Este projeto foi desenvolvido para o Hospital UNIMEC como parte do curso de Otimização de Software para Web do IFBA.
+
+---
+
+**Desenvolvido com ❤️ para o Hospital UNIMEC**
