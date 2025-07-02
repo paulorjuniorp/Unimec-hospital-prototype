@@ -57,8 +57,6 @@ Este projeto representa o site institucional do Hospital UNIMEC, localizado em V
    - Ginecologia e Obstetrícia
    - Oftalmologia
    - Pneumologia
-   - Gastroenterologia
-   - Nefrologia
 
 5. **Contato (contato.html)**
    - Formulário de contato
