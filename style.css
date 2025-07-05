@@ -14,9 +14,8 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  transition: .2s;
   text-transform: capitalize;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
 }
@@ -222,10 +221,6 @@ nav a {
   line-height: 1.8rem;
   margin-bottom: 1rem;
   flex-grow: 1;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .services-content a {
@@ -1492,6 +1487,8 @@ nav a {
 .hero-image img {
   width: 100%;
   border-radius: 15px;
+  max-width: 449px;
+  max-height: 307px;
   box-shadow: var(--box-shadow);
 }
 
