@@ -1511,6 +1511,8 @@ nav a {
   padding: 3rem;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .info-boxes h3 {
