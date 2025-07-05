@@ -1502,6 +1502,8 @@ nav a {
   max-width: 449px;
   max-height: 307px;
   box-shadow: var(--box-shadow);
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .info-boxes {
