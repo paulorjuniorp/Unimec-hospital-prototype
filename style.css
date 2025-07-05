@@ -1489,10 +1489,6 @@ nav a {
   top: 1rem;
 }
 
-.hero-image {
-  flex: 1 1 45rem;
-}
-
 .hero-image img {
   width: 100%;
   border-radius: 15px;
