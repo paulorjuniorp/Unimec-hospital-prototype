@@ -452,6 +452,11 @@ nav a {
     border-radius: 16px;
   }
 
+  hero-image img {
+    max-height: 307;
+    max-width: 380;
+  }
+
   .services {
     padding: 2rem 5%;
   }
