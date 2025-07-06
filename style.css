@@ -1524,7 +1524,7 @@ nav a {
   box-shadow: var(--box-shadow);
   will-change: transform;
   contain: layout style paint;
-  min-height: 220px;
+  min-height: 480px;
 }
 
 .info-boxes h3 {
@@ -1546,6 +1546,8 @@ nav a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .box {
