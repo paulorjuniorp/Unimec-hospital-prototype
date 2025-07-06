@@ -391,7 +391,7 @@ nav a {
 .box p,
 .features ul li,
 .box ul li {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 992px) {
