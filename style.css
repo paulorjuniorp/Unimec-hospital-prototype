@@ -1524,6 +1524,7 @@ nav a {
   box-shadow: var(--box-shadow);
   will-change: transform;
   contain: layout style paint;
+  min-height: 220px;
 }
 
 .info-boxes h3 {
