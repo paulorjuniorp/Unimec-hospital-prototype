@@ -386,6 +386,14 @@ nav a {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.info-boxes p,
+.hero-content p,
+.box p,
+.features ul li,
+.box ul li {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 992px) {
   .main-services {
     grid-template-columns: repeat(2, 1fr);
