@@ -452,10 +452,7 @@ nav a {
     border-radius: 16px;
   }
 
-  hero-image img {
-    max-height: 307;
-    max-width: 380;
-  }
+
 
   .services {
     padding: 2rem 5%;
@@ -1503,9 +1500,10 @@ nav a {
 
 .hero-image img {
   width: 100%;
-  border-radius: 15px;
   max-width: 449px;
-  max-height: 307px;
+  height: auto;
+  aspect-ratio: 449 / 307;
+  display: block;
   box-shadow: var(--box-shadow);
   will-change: transform;
   contain: layout style paint;
