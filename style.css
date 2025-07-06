@@ -1585,6 +1585,8 @@ nav a {
   font-weight: bold;
   position: absolute;
   left: 0;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 /* Responsividade para página sobre */
