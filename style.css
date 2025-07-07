@@ -864,9 +864,17 @@ nav a {
   }
 
   .contact-heading {
-    margin-top: 8rem;
+    margin-top: 14rem;
   }
 
+  .services-page-heading {
+    margin-top: 14rem;
+  }
+
+  .specialties-page-heading {
+    margin-top: 14rem;
+  }
+  
   .contact-heading h1 {
     font-size: 3.2rem;
   }
