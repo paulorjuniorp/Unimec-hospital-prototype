@@ -863,6 +863,10 @@ nav a {
     padding-top: 8%;
   }
 
+  .contact-heading {
+    margin-top: 8rem;
+  }
+
   .contact-heading h1 {
     font-size: 3.2rem;
   }
