@@ -67,6 +67,7 @@ nav a {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 8%;
+  margin-top: 4rem;
 }
 
 .main-inner-home {
@@ -401,130 +402,6 @@ nav a {
   }
 }
 
-@media (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
-
-  header {
-    padding: 2rem;
-  }
-
-  #menu-bar {
-    display: initial;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    background: var(--color);
-    width: 100%;
-    height: 100vh;
-  }
-
-  .navbar.active {
-    left: 0;
-  }
-
-  nav a {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    margin: 1rem;
-    border: 2px solid var(--backgroud);
-    border-radius: 10px;
-    background: var(--button-color);
-  }
-
-  .main-home {
-    padding-top: 16rem;
-  }
-
-  .main-inner-home .right-content-img {
-    padding: 1rem;
-  }
-
-  .main-inner-home .right-content-img img {
-    max-width: 400px;
-    border-radius: 15px;
-  }
-
-  .main-inner-home .right-content-img::before {
-    max-width: 420px;
-    border-radius: 18px;
-  }
-
-  .main-inner-home .right-content-img::after {
-    max-width: 380px;
-    border-radius: 16px;
-  }
-
-
-
-  .services {
-    padding: 2rem 5%;
-  }
-
-  .service-heading h1 {
-    font-size: 3.2rem;
-  }
-
-  .main-services {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .main-inner-services {
-    min-width: unset;
-    max-width: 400px;
-    margin: 0 auto 1rem auto;
-  }
-
-  .services-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .services-content p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-
-  .services-content a {
-    padding: 1rem 1.5rem;
-    font-size: 1.3rem;
-  }
-
-  .appointment {
-    margin-bottom: 1rem;
-  }
-
-  .main-inner-appointment img {
-    max-width: 350px;
-    border-radius: 12px;
-  }
-
-  #acessibilidade-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-    right: 5px;
-  }
-
-  #acessibilidade-btn i {
-    font-size: 14px;
-  }
-
-  #menu-acessibilidade {
-    right: 50px;
-    padding: 0.6rem;
-  }
-
-  #menu-acessibilidade button {
-    padding: 0.6rem 1.2rem;
-    font-size: 1.1rem;
-  }
-}
-
 @media (max-width: 480px) {
   .services {
     padding: 1.5rem 3%;
@@ -856,96 +733,6 @@ nav a {
   display: none !important;
 }
 
-/* Responsividade para contato */
-@media (max-width: 768px) {
-  .contact {
-    padding: 1.5rem 3%;
-    padding-top: 8%;
-  }
-
-  .contact-heading {
-    margin-top: 14rem;
-  }
-
-  .services-page-heading {
-    margin-top: 14rem;
-  }
-
-  .specialties-page-heading {
-    margin-top: 14rem;
-  }
-  
-  .contact-heading h1 {
-    font-size: 3.2rem;
-  }
-
-  .contact-heading p {
-    font-size: 1.4rem;
-  }
-
-  .main-contact {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .contact-info,
-  .contact-form {
-    padding: 2rem;
-  }
-
-  .contact-info h2,
-  .contact-form h2 {
-    font-size: 2rem;
-  }
-
-  .contact-item {
-    padding: 1rem;
-  }
-
-  .contact-item i {
-    font-size: 1.6rem;
-    margin-right: 1rem;
-  }
-
-  .contact-item h3 {
-    font-size: 1.4rem;
-  }
-
-  .contact-item p {
-    font-size: 1.2rem;
-  }
-
-  .social-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-btn {
-    width: 100%;
-    max-width: 250px;
-  }
-
-  #acessibilidade-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-    right: 5px;
-  }
-
-  #acessibilidade-btn i {
-    font-size: 14px;
-  }
-
-  #menu-acessibilidade {
-    right: 50px;
-    padding: 0.6rem;
-  }
-
-  #menu-acessibilidade button {
-    padding: 0.6rem 1.2rem;
-    font-size: 1.1rem;
-  }
-}
 
 @media (max-width: 480px) {
   .contact {
@@ -1317,82 +1104,6 @@ nav a {
   font-size: 1.4rem;
 }
 
-/* Responsividade para páginas de serviços e especialidades */
-@media (max-width: 768px) {
-  .services-page,
-  .specialties-page {
-    padding: 1.5rem 3%;
-    padding-top: 8%;
-  }
-
-  .services-page-heading h1,
-  .specialties-page-heading h1 {
-    font-size: 3.2rem;
-  }
-
-  .services-page-heading p,
-  .specialties-page-heading p {
-    font-size: 1.4rem;
-  }
-
-  .services-categories,
-  .specialties-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .service-category,
-  .specialty-card {
-    padding: 2rem;
-  }
-
-  .service-category h2,
-  .specialty-card h2 {
-    font-size: 2rem;
-  }
-
-  .service-category p,
-  .specialty-card p {
-    font-size: 1.3rem;
-  }
-
-  .highlights-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .highlight-item {
-    padding: 1.5rem;
-  }
-
-  .highlight-item h3 {
-    font-size: 1.6rem;
-  }
-
-  .highlight-item p {
-    font-size: 1.3rem;
-  }
-
-  .services-highlight,
-  .specialties-info {
-    padding: 2rem;
-  }
-
-  .highlight-content h2,
-  .info-content h2 {
-    font-size: 2.4rem;
-  }
-
-  .info-content p {
-    font-size: 1.4rem;
-  }
-
-  .cta-button {
-    padding: 1.2rem 2.5rem;
-    font-size: 1.4rem;
-  }
-}
-
 @media (max-width: 480px) {
   .services-page,
   .specialties-page {
@@ -1609,6 +1320,287 @@ nav a {
 
 /* Responsividade para página sobre */
 @media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  #menu-bar {
+    display: initial;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background: var(--color);
+    width: 100%;
+    height: 100vh;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  nav a {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    border: 2px solid var(--backgroud);
+    border-radius: 10px;
+    background: var(--button-color);
+  }
+
+  .main-home {
+    padding-top: 16rem;
+  }
+
+  .main-inner-home .right-content-img {
+    padding: 1rem;
+  }
+
+  .main-inner-home .right-content-img img {
+    max-width: 400px;
+    border-radius: 15px;
+  }
+
+  .main-inner-home .right-content-img::before {
+    max-width: 420px;
+    border-radius: 18px;
+  }
+
+  .main-inner-home .right-content-img::after {
+    max-width: 380px;
+    border-radius: 16px;
+  }
+
+  .services {
+    padding: 2rem 5%;
+  }
+
+  .service-heading h1 {
+    font-size: 3.2rem;
+  }
+
+  .main-services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-inner-services {
+    min-width: unset;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .services-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-content p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .services-content a {
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .appointment {
+    margin-bottom: 1rem;
+  }
+
+  .main-inner-appointment img {
+    max-width: 350px;
+    border-radius: 12px;
+  }
+
+  #acessibilidade-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    right: 5px;
+  }
+
+  #acessibilidade-btn i {
+    font-size: 14px;
+  }
+
+  #menu-acessibilidade {
+    right: 50px;
+    padding: 0.6rem;
+  }
+
+  #menu-acessibilidade button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.1rem;
+  }
+  
+  .contact {
+    padding: 1.5rem 3%;
+    padding-top: 8%;
+  }
+
+  .contact-heading {
+    margin-top: 14rem;
+  }
+
+  .services-page-heading {
+    margin-top: 14rem;
+  }
+
+  .specialties-page-heading {
+    margin-top: 14rem;
+  }
+  
+  .contact-heading h1 {
+    font-size: 3.2rem;
+  }
+
+  .contact-heading p {
+    font-size: 1.4rem;
+  }
+
+  .main-contact {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 2rem;
+  }
+
+  .contact-item {
+    padding: 1rem;
+  }
+
+  .contact-item i {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+  }
+
+  .contact-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .contact-item p {
+    font-size: 1.2rem;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #acessibilidade-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    right: 5px;
+  }
+
+  #acessibilidade-btn i {
+    font-size: 14px;
+  }
+
+  #menu-acessibilidade {
+    right: 50px;
+    padding: 0.6rem;
+  }
+
+  #menu-acessibilidade button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.1rem;
+  }
+  
+  .services-page,
+  .specialties-page {
+    padding: 1.5rem 3%;
+    padding-top: 8%;
+  }
+
+  .services-page-heading h1,
+  .specialties-page-heading h1 {
+    font-size: 3.2rem;
+  }
+
+  .services-page-heading p,
+  .specialties-page-heading p {
+    font-size: 1.4rem;
+  }
+
+  .services-categories,
+  .specialties-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-category,
+  .specialty-card {
+    padding: 2rem;
+  }
+
+  .service-category h2,
+  .specialty-card h2 {
+    font-size: 2rem;
+  }
+
+  .service-category p,
+  .specialty-card p {
+    font-size: 1.3rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .highlight-item {
+    padding: 1.5rem;
+  }
+
+  .highlight-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .highlight-item p {
+    font-size: 1.3rem;
+  }
+
+  .services-highlight,
+  .specialties-info {
+    padding: 2rem;
+  }
+
+  .highlight-content h2,
+  .info-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .info-content p {
+    font-size: 1.4rem;
+  }
+
+  .cta-button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.4rem;
+  }
+  
   .sobre-modern {
     padding: 1.5rem 3%;
     padding-top: 8%;
@@ -1617,6 +1609,7 @@ nav a {
   .hero-sobre {
     flex-direction: column;
     gap: 2rem;
+    margin-top: 12rem;
   }
 
   .hero-content h1 {
